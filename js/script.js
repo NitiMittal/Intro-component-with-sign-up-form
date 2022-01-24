@@ -32,7 +32,7 @@ form.addEventListener("input", (e) => {
 let engine = (id, serial, message) => {
   if (id.value.trim() === "") {
     failureMsg(id, serial, message);
-  } else if (email.value !== "") {
+  } else if (email.value !== "" && serial == 2) {
     let testMail = ValidateEmail(email.value);
     if (testMail) {
       successMsg(id, serial);
