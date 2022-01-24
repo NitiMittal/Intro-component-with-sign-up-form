@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Intro component with sign up form</title>
+  </head>
+  <body>
+    <main class="container">
+      <article>
+        <div class="main-container">
+          <div class="item-1">
+            <h1 class="title">Learn to code by watching others</h1>
+            <p class="content">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+          </div>
+          <div class="item-2">
+            <h2 class="sub-title">Try it free 7 days then $20/mo. thereafter</h2>
+            <div class="form-group">
+              <form action="#" id="form">
+                <div>
+                  <input type="text" name="first" id="first" placeholder="First Name" />
+                  <i class="fas fa-exclamation-circle failure-icon"></i>
+                  <i class="far fa-check-circle success-icon"></i>
+                  <div class="error"></div>
+                </div>
+
+                <div>
+                  <input type="text" name="last" id="last" placeholder="Last Name" />
+                  <i class="fas fa-exclamation-circle failure-icon"></i>
+                  <i class="far fa-check-circle success-icon"></i>
+                  <div class="error"></div>
+                </div>
+
+                <div>
+                  <input type="text" name="email" id="email" placeholder="Email Address" />
+                  <i class="fas fa-exclamation-circle failure-icon"></i>
+                  <i class="far fa-check-circle success-icon"></i>
+                  <div class="error"></div>
+                </div>
+                <div>
+                  <input type="password" name="password" id="password" placeholder="Password" />
+                  <i class="fas fa-exclamation-circle failure-icon"></i>
+                  <i class="far fa-check-circle success-icon"></i>
+                  <div class="error"></div>
+                </div>
+                <button class="btn" type="submit">Claim your free trial</button>
+                <p class="services">By clicking the button, you are agreeing to our<a href="#" class="terms"> Terms and Services</a> </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+          <a href="https://github.com/NitiMittal/Intro-component-with-sign-up-form">Niti Mittal</a>.
+        </p>
+      </footer>
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

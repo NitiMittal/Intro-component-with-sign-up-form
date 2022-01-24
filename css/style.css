@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --darkBlue: hsl(249, 10%, 26%);
+  --gBlue: hsl(246, 25%, 77%);
+  --white: #fff;
+}
+
+body {
+  background-image: url("../images/bg-intro-mobile.png");
+  background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: var(--white);
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+.item-1 {
+  /* width: 100%; */
+  margin: 32rem 3rem 2rem 3rem;
+  height: 100%;
+  /* margin: auto; */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.content {
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.item-2 {
+  width: 100%;
+  padding: 1rem;
+}
+
+.sub-title {
+  background: var(--blue);
+  font-size: 1rem;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  background: var(--white);
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.form {
+  width: 100%;
+  margin: 0 1rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  margin: 1.5rem 0rem 0rem 0rem;
+  outline: none;
+  border: 1px solid var(--gBlue);
+  font-size: 1rem;
+}
+
+input:focus {
+  border: 1px solid var(--blue);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  background: var(--green);
+  padding: 0.7rem 0.7rem;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid var(--green);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.services {
+  color: var(--gBlue);
+  font-size: 11px;
+  margin-bottom: 1rem;
+}
+
+.terms {
+  text-decoration: none;
+  color: var(--red);
+  font-weight: 600;
+}
+
+form {
+  margin: 1rem;
+}
+form div {
+  position: relative;
+  /* margin-bottom: 1rem; */
+}
+
+form div i {
+  position: absolute;
+  margin-top: -33px;
+  margin-right: 10px;
+}
+
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+
+.failure-icon,
+.error {
+  color: var(--red);
+}
+
+.success-icon {
+  color: var(--green);
+}
+
+.error {
+  font-size: 12px;
+  float: right;
+  margin: 0.6rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+  .main-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .item-1 {
+    width: 50%;
+    padding: 8rem 3rem 8rem 8rem;
+    margin: 0;
+  }
+  .item-2 {
+    width: 50%;
+    padding: 5rem;
+  }
+  form {
+    margin: 1rem;
+  }
+}
